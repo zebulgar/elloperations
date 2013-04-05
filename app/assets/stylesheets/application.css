@@ -13,12 +13,39 @@
  */
  body {
   margin: 0px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
  }
  h2 {
   margin: 0px;
   display: inline;
+  font-family: helvetica;
+  font-size: 1em;
  }
- #container {
+ #contact {
+  margin-left: 10px;
+ }
+ #line {
+  display: inline;
+  background-color: white;
+  width: 1px;
+  height: 40px;
+  position: absolute;
+  top: 10px;
+  margin-right: 20px;
+ }
+ #name {
+  margin-right: 20px;
+ }
+ #team {
+  margin-right: 10px;
+ }
+ #header_container {
   background-color: black;
   color: white;
+  padding: 20px;
+  padding-left: 50%;
  }
+.thin {
+  font-weight: 100;
+}
