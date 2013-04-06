@@ -11,12 +11,36 @@
  *= require_self
  *= require_tree .
  */
+html {
+  height: 100%;
+  width: 100%;
+}
+
  body {
   margin: 0px;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   font-weight: 300;
+  height: 100%;
+  width: 100%;
+  /* IE10 Consumer Preview */ 
+  background-image: -ms-linear-gradient(left, #212121 0%, #58566E 100%);
+
+  /* Mozilla Firefox */ 
+  background-image: -moz-linear-gradient(left, #212121 0%, #58566E 100%);
+
+  /* Opera */ 
+  background-image: -o-linear-gradient(left, #212121 0%, #58566E 100%);
+
+  /* Webkit (Safari/Chrome 10) */ 
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #212121), color-stop(1, #58566E));
+
+  /* Webkit (Chrome 11+) */ 
+  background-image: -webkit-linear-gradient(left, #212121 0%, #58566E 100%);
+
+  /* W3C Markup, IE10 Release Preview */ 
+  background-image: linear-gradient(to right, #212121 0%, #58566E 100%);
  }
- h2 {
+ h3 {
   margin: 0px;
   display: inline;
   font-family: helvetica;
@@ -24,6 +48,24 @@
  }
  #contact {
   margin-left: 10px;
+ }
+ #container {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  width: 750px;
+  color: white;
+ }
+ #description {
+  font-weight: 100;
+  font-size: 1.4em;
+ }
+ #inner_title {
+  font-style: italic;
+  font-weight: 100;
+  font-size: 3em;
+  width: 750px;
+  border-bottom: 1px white solid;
  }
  #line {
   display: inline;
