@@ -6,8 +6,11 @@
   = javascript_include_tag "application"
   = csrf_meta_tags
 #header_container
-  %h3#name ELL OPERATIONS
-  %h3#team.thin THE TEAM
+  %h3#name 
+    %a{:href=>"/"} ELL OPERATIONS
+  %h3#team.thin 
+    %a{:href=>"/team"} THE TEAM
   #line
-  %h3#contact.thin Contact Us
+  %h3#contact.thin 
+    %a{:href=>"mailto:nrobert14@gmail.com"} Contact Us
 = yield
